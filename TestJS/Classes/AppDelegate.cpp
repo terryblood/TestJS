@@ -28,6 +28,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCDirector *pDirector = CCDirector::sharedDirector();
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
     
+    // Set the design resolution
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(640, 960, kResolutionShowAll);
+    
     // turn on display FPS
     pDirector->setDisplayStats(true);
     
@@ -49,7 +52,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     CCScriptEngineProtocol *pEngine = ScriptingCore::getInstance();
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
-    ScriptingCore::getInstance()->runScript("hello.js");
+    ScriptingCore::getInstance()->runScript("js/hello.js");
     
     return true;
 }
@@ -68,7 +71,7 @@ void handle_signal(int signal) {
                   sc->start();
                   internal_state = 1;
                  } else {
-                      sc->runScript("hello.js");
+                      sc->runScript("js/hello.js");
                       internal_state = 0;
                      }
             }

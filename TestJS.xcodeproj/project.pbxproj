@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F700A15C1748EFB800AFEF2F /* res in Resources */ = {isa = PBXBuildFile; fileRef = F700A15B1748EFB800AFEF2F /* res */; };
 		F77E5E1917451D7A008959B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77E5E1817451D7A008959B4 /* QuartzCore.framework */; };
 		F77E5E1B17451D7A008959B4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77E5E1A17451D7A008959B4 /* OpenGLES.framework */; };
 		F77E5E1D17451D7A008959B4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77E5E1C17451D7A008959B4 /* OpenAL.framework */; };
@@ -286,13 +287,14 @@
 		F77E61CE17451D80008959B4 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = F77E61CD17451D80008959B4 /* fps_images-hd.png */; };
 		F77E61D017451D80008959B4 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = F77E61CF17451D80008959B4 /* fps_images-ipadhd.png */; };
 		F77E61D217451D80008959B4 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = F77E61D117451D80008959B4 /* fps_images.png */; };
-		F77E61D417451D80008959B4 /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = F77E61D317451D80008959B4 /* hello.js */; };
 		F77E61D617451D80008959B4 /* hello.js_BACK in Resources */ = {isa = PBXBuildFile; fileRef = F77E61D517451D80008959B4 /* hello.js_BACK */; };
 		F77E61D817451D80008959B4 /* menu1.png in Resources */ = {isa = PBXBuildFile; fileRef = F77E61D717451D80008959B4 /* menu1.png */; };
 		F77E61DA17451D80008959B4 /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = F77E61D917451D80008959B4 /* menu2.png */; };
+		F77E61E317452713008959B4 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F77E61E217452713008959B4 /* js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F700A15B1748EFB800AFEF2F /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = Resources/res; sourceTree = "<group>"; };
 		F77E5E1517451D7A008959B4 /* TestJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E5E1817451D7A008959B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F77E5E1A17451D7A008959B4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -901,10 +903,10 @@
 		F77E61CD17451D80008959B4 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fps_images-hd.png"; path = "Resources/fps_images-hd.png"; sourceTree = "<group>"; };
 		F77E61CF17451D80008959B4 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fps_images-ipadhd.png"; path = "Resources/fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		F77E61D117451D80008959B4 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = Resources/fps_images.png; sourceTree = "<group>"; };
-		F77E61D317451D80008959B4 /* hello.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = hello.js; path = Resources/hello.js; sourceTree = "<group>"; };
 		F77E61D517451D80008959B4 /* hello.js_BACK */ = {isa = PBXFileReference; lastKnownFileType = text; name = hello.js_BACK; path = Resources/hello.js_BACK; sourceTree = "<group>"; };
 		F77E61D717451D80008959B4 /* menu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu1.png; path = Resources/menu1.png; sourceTree = "<group>"; };
 		F77E61D917451D80008959B4 /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2.png; path = Resources/menu2.png; sourceTree = "<group>"; };
+		F77E61E217452713008959B4 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = Resources/js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -975,6 +977,8 @@
 		F77E5E2917451D7A008959B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F700A15B1748EFB800AFEF2F /* res */,
+				F77E61E217452713008959B4 /* js */,
 				F77E5E2A17451D7A008959B4 /* CloseNormal.png */,
 				F77E5E2C17451D7A008959B4 /* CloseSelected.png */,
 				F77E5E2E17451D7A008959B4 /* Default.png */,
@@ -990,7 +994,6 @@
 				F77E61CD17451D80008959B4 /* fps_images-hd.png */,
 				F77E61CF17451D80008959B4 /* fps_images-ipadhd.png */,
 				F77E61D117451D80008959B4 /* fps_images.png */,
-				F77E61D317451D80008959B4 /* hello.js */,
 				F77E61D517451D80008959B4 /* hello.js_BACK */,
 				F77E61D717451D80008959B4 /* menu1.png */,
 				F77E61D917451D80008959B4 /* menu2.png */,
@@ -2222,10 +2225,11 @@
 				F77E61CE17451D80008959B4 /* fps_images-hd.png in Resources */,
 				F77E61D017451D80008959B4 /* fps_images-ipadhd.png in Resources */,
 				F77E61D217451D80008959B4 /* fps_images.png in Resources */,
-				F77E61D417451D80008959B4 /* hello.js in Resources */,
 				F77E61D617451D80008959B4 /* hello.js_BACK in Resources */,
 				F77E61D817451D80008959B4 /* menu1.png in Resources */,
 				F77E61DA17451D80008959B4 /* menu2.png in Resources */,
+				F77E61E317452713008959B4 /* js in Resources */,
+				F700A15C1748EFB800AFEF2F /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2586,6 +2590,7 @@
 				F77E61DF17451D80008959B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

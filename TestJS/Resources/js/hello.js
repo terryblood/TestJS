@@ -140,6 +140,7 @@ try {
         }
         
         self.onAbout = function() {
+            
             director.replaceScene( cc.TransitionZoomFlipY.create(1, this.getAboutScene()) );
         };
     
